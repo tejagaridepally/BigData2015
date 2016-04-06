@@ -1,0 +1,110 @@
+master table
+
+create table master_tweets(
+created_at date,
+id integer,
+id_str varchar(75),
+text varchar(75),
+user_id integer,
+user_id_str varchar(75),
+user_name varchar(75),
+user_screen_name varchar(75),
+user_location varchar(75),
+user_protected smallint,
+user_verified smallint,
+user_followers_count integer,
+user_friends_count integer,
+user_listed_count integer,
+user_favourites_count integer,
+user_statuses_count integer,
+user_created_at varchar(75),
+user_utc_offset integer,
+user_time_zone varchar(75),
+user_geo_enabled smallint,
+user_lang varchar(75),
+user_contributors_enabled smallint,
+user_is_translator smallint,
+geo_type varchar(75),
+geo_coord_lat float,
+geo_coord_long float,
+coordy_type varchar(75),
+cordy_coord_lat float,
+cordy_coord_long float,
+place_id varchar(75),
+place_type varchar(75),
+place_name varchar(75),
+place_ctry_code varchar(75),
+place_country varchar(75),
+place_full_name varchar(75),
+retweet_count integer,
+favorite_count integer,
+favorited smallint,
+retweeted smallint,
+possibly_sensitive smallint,
+filter_level varchar(75),
+lang varchar(75),
+timestamp_ms varchar(75)
+);
+
+tweet_info:
+
+create table tweet_info(
+created_at date,
+id integer,
+id_str varchar(50),
+text varchar(50),
+user_id integer,
+geo_type varchar(50),
+geo_coord_lat float,
+geo_coord_long float,
+coordy_type varchar(50),
+cordy_coord_lat float,
+cordy_coord_long float,
+place_id varchar(50),
+place_type varchar(50),
+place_name varchar(50),
+place_ctry_code varchar(50),
+place_country varchar(50),
+place_full_name varchar(50),
+retweet_count integer,
+favorite_count integer,
+favorited smallint,
+retweeted smallint,
+possibly_sensitive smallint,
+filter_level varchar(50),
+lang varchar(50),
+timestamp_ms varchar(50)
+);
+
+
+user_info:
+
+
+create table user_info(
+user_id integer,
+user_id_str varchar(50),
+user_name varchar(50),
+user_screen_name varchar(50),
+user_location varchar(50),
+user_protected smallint,
+user_verified smallint,
+user_created_at varchar(50),
+user_utc_offset integer,
+user_time_zone varchar(50),
+user_geo_enabled smallint,
+user_lang varchar(50),
+user_contributors_enabled smallint,
+user_is_translator smallint);
+
+
+user_count_info:
+
+
+create table user_count_info(
+user_id integer,
+user_followers_count integer,
+user_friends_count integer,
+user_listed_count integer,
+user_favourites_count integer,
+user_statuses_count integer
+);
